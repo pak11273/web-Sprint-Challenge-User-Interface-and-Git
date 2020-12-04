@@ -88,6 +88,14 @@ nav {
     height: 78px;
 }
 
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    cursor: pointer;
+}
+
 .logo {
     height: 60px;
     width: 154.8px;
@@ -121,10 +129,19 @@ nav {
    margin-bottom: 19px;
 }
 
+.top-content img {
+   margin-bottom: 21px;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 16px;  
+}
+
+.top-content .text-container_about {
+    padding-bottom: 16px;
+    width: 95%;
 }
 
 .middle-content {
@@ -192,4 +209,59 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about page */
+.about-middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.articles:nth-child(2) {
+    margin-top: 25px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    margin-bottom: 25px;
+    width: 296px;
+}
+
+article h2 {
+    margin: 10px 0 12px 0;
+}
+
+article p {
+    margin-bottom: 17px;
+}
+
+article img {
+    height: 189px;
+}
+
+article button {
+    border-radius: 5px;
+    height: 31px;
+    width: 104px;
+    margin-bottom: 16px;
+    font-size: .8rem;
+}
+
+.top-content {
+    margin-bottom: 24px;
+}
+
+.bottom-content_about {
+    padding: 0 16px 33px;
+}
+
+.bottom-content_about h2 {
+    margin-top: 13px;
 }
