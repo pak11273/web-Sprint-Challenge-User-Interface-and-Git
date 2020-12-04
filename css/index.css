@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+/* eof reset */
+
+/* global styles */
+
 * {
     box-sizing: border-box;
 }
@@ -54,39 +59,94 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: .9rem;
+    margin-bottom: 11.5px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
+    font-size: .8rem;
     line-height: 1.4;
 }
 
+
 .container {
-    width: 800px;
+    width: 640px;
     margin: 0 auto;
 }
+
+/* eof global styles */
+
+/* nav */
+nav {
+    display: flex;
+    width: 100%;
+    height: 78px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    cursor: pointer;
+}
+
+.logo {
+    height: 60px;
+    width: 154.8px;
+    background: url("/img/lambda-black.png") center/contain no-repeat;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.menu div {
+    margin-top: 5px;
+    font-size: .7rem;
+}
+
+/* eof nav */
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-bottom: 1px dashed black;
+}
+
+.top-content img {
+   height: 122px; 
+   margin-bottom: 19px;
+}
+
+.top-content img {
+   margin-bottom: 21px;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 16px;  
+}
+
+.top-content .text-container_about {
+    padding-bottom: 16px;
+    width: 95%;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    height: 240px;
+    margin-bottom: 15px;
     border-bottom: 1px dashed black;
 }
 
@@ -99,13 +159,56 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-around;
+    height: 226px;
+}
+
+#box1 {
+ background: teal;
+}
+
+#box2 {
+ background: gold;
+}
+
+#box3 {
+ background: cadetblue;
+}
+
+#box4 {
+ background: coral;
+}
+
+#box5 {
+ background: crimson;
+}
+
+#box6 {
+ background: forestgreen;
+}
+
+#box7 {
+ background: darkorchid;
+}
+
+#box8 {
+ background: hotpink;
+}
+
+#box9 {
+ background: indigo;
+}
+
+#box10 {
+ background: dodgerblue;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 79px;
     background: black;
-    margin: 20px 2.5%;
+    font-size: .8rem;
+    margin: 0 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -114,7 +217,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 17px;
     justify-content: space-around;
 }
 
@@ -127,6 +230,9 @@ p {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    height: 42px;
     width: 100%;
     background: black;
 }
@@ -137,10 +243,65 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about page */
+.about-middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.articles:nth-child(2) {
+    margin-top: 25px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    margin-bottom: 25px;
+    width: 296px;
+}
+
+article h2 {
+    margin: 10px 0 12px 0;
+}
+
+article p {
+    margin-bottom: 17px;
+}
+
+article img {
+    height: 189px;
+}
+
+article button {
+    border-radius: 5px;
+    height: 31px;
+    width: 104px;
+    margin-bottom: 16px;
+    font-size: .8rem;
+}
+
+.top-content {
+    margin-bottom: 24px;
+}
+
+.bottom-content_about {
+    padding: 0 16px 33px;
+}
+
+.bottom-content_about h2 {
+    margin-top: 13px;
 }
