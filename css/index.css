@@ -74,10 +74,6 @@ p {
 }
 
 
-body, .container {
-    border: 1px solid red;
-}
-
 .container {
     width: 640px;
     margin: 0 auto;
@@ -133,7 +129,7 @@ nav {
 
 .middle-content {
     height: 240px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-bottom: 1px dashed black;
 }
 
@@ -164,8 +160,7 @@ nav {
 
 .bottom-content {
     display: flex;
-    display: none;
-    margin: 0 2% 20px;
+    margin: 0 2% 17px;
     justify-content: space-around;
 }
 
@@ -178,7 +173,9 @@ nav {
 }
 
 footer {
-    display: none;
+    display: flex;
+    align-items: center;
+    height: 42px;
     width: 100%;
     background: black;
 }
@@ -189,7 +186,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 footer nav a {
