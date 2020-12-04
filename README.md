@@ -33,22 +33,31 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+Semantic html is meaningful tags that help developers know what the content is inside of the tags.  It's also used extensively with browsers for SEO.
 
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+1) Display block leaves elements on their own line
+2) Inline has no respect of top or bottom margin/padding
 
 3. What are the 4 areas of the box model?
+1) margin
+2) border
+3) padding
+4) content
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+cross-axis
 
 5. Explain why git is valuable to a team of developers.
+Git is valuable to a team of developers because it keeps track of the history of applications the team works on.  It can revert back to a previous commit to undo mistakes.  Teams can use Git to work on different features of an application without having to worry about what other departments are working on because of the merge feature.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push -u origin `<firstName-lastName>`.
  
